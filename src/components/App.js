@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import $ from '../../jquery';
 
 class App extends Component {
   render() {
@@ -6,11 +7,12 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
         </div>
-        <p className="App-intro">
           <h1 className="header">Append Here</h1>
-
-        </p>
       </div>
+
+
+
+
     );
   }
 }

@@ -1,45 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import $ from 'jquery';
 
 
-      var number = [
-        "1.txt",
-        "2.txt",
-        "3.txt",
-        "4.txt",
-        "5.txt",
-        "6.txt",
-        "7.txt"
-      ]
-
+// const Button = (props) =>
+//   <button type="button" {...props} className={"btn " + props.className } onClick={props.onClick} />;
 
 
 const Files = React.createClass({
+
     render: function() {
-      var stations = [
-        "https://s3.eu-central-1.amazonaws.com/wt-story/" + number[0] + ".txt"
-      ]
-        return (
-            <ul>
-                {stations.map(function(name, index){
-                    return (<a key={ index }>{name} </a>);
-                  })}
-            </ul>
-        )
-    }
-});
+      return (
+          <ul>
+            {this.props.number.map(function(number){
+              return <a>{number}</a>;
+            })}
+            <br/>
+          <button className="btn1" onClick={this.props.number}>start</button>
+          </ul>
+      )
+  }
+}
+)
+
+ReactDOM.render(<Files number={[
+         ("https://s3.eu-central-1.amazonaws.com/wt-story/1.txt"),
+         <br/>,
+         ("https://s3.eu-central-1.amazonaws.com/wt-story/2.txt"),
+         <br/>,
+         ("https://s3.eu-central-1.amazonaws.com/wt-story/3.txt"),
+         <br/>,
+         ("https://s3.eu-central-1.amazonaws.com/wt-story/4.txt"),
+         <br/>,
+         ("https://s3.eu-central-1.amazonaws.com/wt-story/5.txt"),
+         <br/>,
+         ("https://s3.eu-central-1.amazonaws.com/wt-story/6.txt"),
+         <br/>,
+         ("https://s3.eu-central-1.amazonaws.com/wt-story/7.txt")
+        ]}
+/>,
+document.getElementById('testing2'))
 
 
-export default Files;
 
 
-
-      // var stations = [
-      //   "https://s3.eu-central-1.amazonaws.com/wt-story/1.txt",
-      //   "https://s3.eu-central-1.amazonaws.com/wt-story/2.txt",
-      //   "https://s3.eu-central-1.amazonaws.com/wt-story/3.txt",
-      //   "https://s3.eu-central-1.amazonaws.com/wt-story/4.txt",
-      //   "https://s3.eu-central-1.amazonaws.com/wt-story/5.txt",
-      //   "https://s3.eu-central-1.amazonaws.com/wt-story/6.txt",
-      //   "https://s3.eu-central-1.amazonaws.com/wt-story/7.txt"
-      // ]
