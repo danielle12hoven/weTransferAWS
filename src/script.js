@@ -1,12 +1,12 @@
+$(document).ready(function() {
+console.log("script loaded")
 
-
-componentDidMount: function() {
 
       var getData = function(lists) {
           $.ajax({
-            url: "https://s3.eu-central-1.amazonaws.com/wt-story/2.txt",
             type: 'GET',
-            dataType: 'JSON',
+            url: "https://s3.eu-central-1.amazonaws.com/wt-story/2.txt",
+            dataType: 'jsonp',
             success: function(data) {
               console.log("data");
               parseData(data)
@@ -18,7 +18,7 @@ componentDidMount: function() {
       }
 
       var addFunction = function(){
-          $("#button1").click(function(data){
+          $("#button1").click(function(lists){
             var lists = $("#button1").val();
             getData(lists);
             event.preventDefault();
@@ -32,9 +32,8 @@ componentDidMount: function() {
 
         for(var i=0; i < data.length; i++) {
           var $getLi = $("<li>")
-            $getLi = $getLi.addClass("appendedItems")
 
-          var $saveButton = $("<button>Save</button>")
+          var $saveButton = $("<button>Show</button>")
 
           var $dataLink = data[i]
 
@@ -42,7 +41,7 @@ componentDidMount: function() {
           $getLi.append($saveButton)
 
           $getUl.append($getLi)
-          $(".header").append($getUl)
+          (body).append($getUl)
         }
         $saveButton()
       }
