@@ -49,9 +49,15 @@ const Files = React.createClass({
 }
 )
 
+var text1 = text[0]
+
 ReactDOM.render(<Files number={
       [
-        <button className="btn1">First</button>,
+        <button className="btn1" onClick={function() {
+          console.log(text[0])
+          return <li className="text1">{text[0]}</li>
+        }
+        }>First</button>,
         <button className="btn2">Second</button>,
         <button className="btn3">Third</button>,
         <button className="btn4">Fourth</button>,
