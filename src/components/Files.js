@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 // import $ from 'jquery';
 
-var links = [
-         "https://s3.eu-central-1.amazonaws.com/wt-story/1.txt",
-         "https://s3.eu-central-1.amazonaws.com/wt-story/2.txt",
-         "https://s3.eu-central-1.amazonaws.com/wt-story/3.txt",
-         "https://s3.eu-central-1.amazonaws.com/wt-story/4.txt",
-         "https://s3.eu-central-1.amazonaws.com/wt-story/5.txt",
-         "https://s3.eu-central-1.amazonaws.com/wt-story/6.txt",
-         "https://s3.eu-central-1.amazonaws.com/wt-story/7.txt"
-         ]
+// var links = [
+//          "https://s3.eu-central-1.amazonaws.com/wt-story/1.txt",
+//          "https://s3.eu-central-1.amazonaws.com/wt-story/2.txt",
+//          "https://s3.eu-central-1.amazonaws.com/wt-story/3.txt",
+//          "https://s3.eu-central-1.amazonaws.com/wt-story/4.txt",
+//          "https://s3.eu-central-1.amazonaws.com/wt-story/5.txt",
+//          "https://s3.eu-central-1.amazonaws.com/wt-story/6.txt",
+//          "https://s3.eu-central-1.amazonaws.com/wt-story/7.txt"
+//          ]
+
 
 var text = [
   "Lorum ipsum",
@@ -33,42 +34,47 @@ var text = [
   "Lucky number 7"
 ]
 
-const Files = React.createClass({
+class Files extends Component {
 
-    render: function() {
+    render() {
       return (
           <ul>
             {this.props.number.map(function(number){
               return <li className="items">{number}</li>;
+
             })}
             <br/>
-            <li className="links">{links}</li>
           </ul>
       )
   }
 }
-)
 
-var text1 = text[0]
-
-ReactDOM.render(<Files number={
+ReactDOM.render(<Files number= {
       [
         <button className="btn1" onClick={function() {
           console.log(text[0])
-          return <li className="text1">{text[0]}</li>
-        }
-        }>First</button>,
-        <button className="btn2">Second</button>,
-        <button className="btn3">Third</button>,
-        <button className="btn4">Fourth</button>,
-        <button className="btn5">Fifth</button>,
-        <button className="btn6">Sixth</button>,
-        <button className="btn7">Seventh</button>
+        }}>First</button>,
+        <button className="btn2" onClick={function() {
+          console.log(text[1])
+        }}>Second</button>,
+        <button className="btn3" onClick={function() {
+          console.log(text[2])
+        }}>Third</button>,
+        <button className="btn4" onClick={function() {
+          console.log(text[3])
+        }}>Fourth</button>,
+        <button className="btn5" onClick={function() {
+          console.log(text[4])
+        }}>Fifth</button>,
+        <button className="btn6" onClick={function() {
+          console.log(text[5])
+        }}>Sixth</button>,
+        <button className="btn7" onClick={function() {
+          console.log(text[6])
+        }}>Seventh</button>
       ]}
 />,
-document.getElementById('testing2'))
+document.getElementById('main'))
 
-
-export default Files;
 
 
