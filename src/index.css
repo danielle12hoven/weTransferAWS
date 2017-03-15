@@ -7,13 +7,13 @@ body {
 
 div.move {
 margin:auto;
-display:block;
 float: left;
 clear: left;
-vertical-align:middle;
-border: 1px solid black;
 clear: both;
-width: 200px;
+width: 150px;
+border: 1px solid black;
+border-radius: 10px;
+text-align: center;
 }
 #move2 {
 margin:auto;
@@ -30,23 +30,12 @@ float: left;
 }
 #html-button {
     margin-left: 20px;
-
-}
-#text-div {
-  width: 40%;
-  position: relative;
-  display: inline-block;
-  float: right;
 }
 .buttons {
   margin: 20px;
   /* width: 200px; */
   list-style-type: none;
   display: inline-block;
-}
-
-LinkOne {
-
 }
 
 #form-submit {
@@ -57,13 +46,13 @@ LinkOne {
 .new-component {
   position: relative;
   vertical-align: middle;
-  width: ;
+  width:120px ;
 }
 
 #new-component-1 {
   width: 100%;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 100px;
   clear: both;
   margin-right: 80px;
   display: block;
@@ -72,7 +61,7 @@ LinkOne {
 #new-component-2 {
   width: 500px;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 100px;
   float: right;
   margin-right: 80px;
   display: block;
@@ -82,33 +71,33 @@ LinkOne {
   width: 500px;
   display: table;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 100px;
   margin-right: 80px;
   display: block;
 }
 #new-component-4 {
   width: 500px;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 100px;
   margin-right: 80px;
   display: block;
 }
 #new-component-5 {
   width: 500px;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 100px;
   margin-right: 80px;
 }
 #new-component-6 {
   width: 500px;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 100px;
   margin-right: 80px;
 }
 #new-component-7 {
   width: 500px;
   position: absolute;
-  margin-top: 300px;
+  margin-top: 100px;
   margin-right: 80px;
 }
 
