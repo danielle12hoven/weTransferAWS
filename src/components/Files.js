@@ -38,20 +38,19 @@ class Files extends Component {
 
     render() {
       return (
-          <ul>
+          <div>
             {this.props.number.map(function(number){
               return <li className="items">{number}</li>;
-
             })}
-            <br/>
-          </ul>
+          </div>
       )
   }
 }
 
-ReactDOM.render(<Files number= {
+ReactDOM.render(<Files number={
       [
-        <button className="btn1" onClick={function() {
+        <button className="btn1" onClick={() => {
+          {this.props.addTaskFunction(text)}
           console.log(text[0])
         }}>First</button>,
         <button className="btn2" onClick={function() {
