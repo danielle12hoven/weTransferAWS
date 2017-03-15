@@ -44,8 +44,10 @@ class LinkTwo extends React.Component {
     return (
       <div>
         <Button onClick={this.handleClick} />
-        {this.state.clicked ? <NewComponent  className="new-component" id="new-component-2"/> : null}
-      </div>
+          <div className="new-component">
+            {this.state.clicked ? <NewComponent  id="new-component-2"/> : null}
+          </div>
+     </div>
     );
   }
 };
