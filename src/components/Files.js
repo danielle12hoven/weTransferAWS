@@ -50,9 +50,9 @@ class Files extends Component {
 
 ReactDOM.render(<Files number={
       [
-        // <button className="btn1" onClick={() => {
-        //   console.log(text[0])
-        // }}>First</button>,
+        <button className="btn1" onClick={() => {
+          console.log(text[0])
+        }}>First</button>,
         <button className="btn2" onClick={function() {
         }}>Second</button>,
         <button className="btn3" onClick={function() {
@@ -65,7 +65,7 @@ ReactDOM.render(<Files number={
           console.log(text[4])
         }}>Fifth</button>,
         <button className="btn6" onClick={function() {
-          console.log(text[5])
+          "Number five"
         }}>Sixth</button>,
         <button className="btn7" onClick={function() {
           console.log(text[6])

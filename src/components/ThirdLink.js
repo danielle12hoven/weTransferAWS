@@ -6,8 +6,8 @@ class NewComponent extends React.Component {
   render() {
     return (
       <div {...this.props}>
-        {console.log("1 works")}
-        Lorum ispum
+        {console.log("3 works")}
+        Our third file!
       </div>
     );
   }
@@ -16,14 +16,14 @@ class NewComponent extends React.Component {
 class Button extends React.Component {
   render() {
     return (
-      <button {...this.props}>
-        Link 1
+      <button{...this.props}>
+        Link 3
       </button>
     );
   }
 }
 
-class LinkOne extends React.Component {
+class LinkThree extends React.Component {
   constructor() {
     super();
 
@@ -45,7 +45,7 @@ class LinkOne extends React.Component {
       <div>
         <Button onClick={this.handleClick} />
           <div className="new-component">
-            {this.state.clicked ? <NewComponent id="new-component-1"/> : null}
+            {this.state.clicked ? <NewComponent id="new-component-3"/> : null}
           </div>
       </div>
     );
@@ -54,7 +54,7 @@ class LinkOne extends React.Component {
 
 
 ReactDOM.render(
-  <LinkOne />,
-  document.getElementById('firstDiv')
+  <LinkThree />,
+  document.getElementById('thirdDiv')
 );
 

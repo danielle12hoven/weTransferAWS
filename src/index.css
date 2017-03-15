@@ -4,14 +4,12 @@ body {
   font-family: sans-serif;
   background-color: lightblue;
 }
-
-
 .items {
   list-style-type: none;
 }
 
 .new-component {
-  margin-top: 100px;
+  margin-top: 200px;
   z-index: 100;
   position: absolute;
 }
@@ -22,9 +20,12 @@ body {
   position: relative;
 }
  */
+
+/*
 #button-1 {
   position: relative;
 }
 #button-2 {
   position: relative;
 }
+ */
