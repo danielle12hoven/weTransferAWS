@@ -7,7 +7,9 @@ class NewComponent extends React.Component {
     return (
       <div {...this.props}>
         {console.log("3 works")}
-        Our third file!
+         <div className="move">
+          Our third file!
+          </div>
       </div>
     );
   }

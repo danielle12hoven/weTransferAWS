@@ -4,28 +4,101 @@ body {
   font-family: sans-serif;
   background-color: lightblue;
 }
-.items {
+
+div.move {
+  padding: 20px;
+}
+#move2 {
+
+}
+
+.outer-div {
+  display: block;
+}
+
+.button-div {
+  width: 30%;
+  position: relative;
+  display: inline-block;
+}
+#html-button {
+    margin-left: 20px;
+
+}
+#text-div {
+  width: 40%;
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+.buttons {
+  margin: 20px;
+  /* width: 200px; */
   list-style-type: none;
+  display: inline-block;
+}
+
+#form-submit {
+  display: block;
+  margin-left: 20px;
 }
 
 .new-component {
-  margin-top: 200px;
-  z-index: 100;
-  position: absolute;
-}
-/* #new-component-1 {
   position: relative;
+  vertical-align: middle;
 }
-#new-component-2 {
-  position: relative;
-}
- */
 
-/*
-#button-1 {
-  position: relative;
+#new-component-1 {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  margin-top: 300px;
+  clear: both;
+  margin-right: 80px;
+  display: block;
 }
-#button-2 {
-  position: relative;
+
+#new-component-2 {
+  width: 500px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 300px;
+  float: right;
+  margin-right: 80px;
+  display: block;
 }
- */
+
+#new-component-3 {
+  width: 500px;
+  display: table;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 80px;
+  display: block;
+}
+#new-component-4 {
+  width: 500px;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 80px;
+  display: block;
+}
+#new-component-5 {
+  width: 500px;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 80px;
+}
+#new-component-6 {
+  width: 500px;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 80px;
+}
+#new-component-7 {
+  width: 500px;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 80px;
+}
+

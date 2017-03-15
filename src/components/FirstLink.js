@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
+// import Files from './Files'
 
 class NewComponent extends React.Component {
   render() {
     return (
       <div {...this.props}>
         {console.log("1 works")}
+        <div className="move">
         Lorum ispum
+        </div>
       </div>
     );
   }
@@ -57,4 +59,3 @@ ReactDOM.render(
   <LinkOne />,
   document.getElementById('firstDiv')
 );
-

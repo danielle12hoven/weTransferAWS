@@ -7,7 +7,9 @@ class NewComponent extends React.Component {
     return (
       <div {...this.props}>
       {console.log("5 works")}
+        <div className="move">
         Number five
+        </div>
       </div>
     );
   }
@@ -45,7 +47,7 @@ class LinkFive extends React.Component {
       <div>
         <Button onClick={this.handleClick} />
           <div className="new-component">
-            {this.state.clicked ? <NewComponent id="new-component-4"/> : null}
+            {this.state.clicked ? <NewComponent id="new-component-5"/> : null}
           </div>
       </div>
     );

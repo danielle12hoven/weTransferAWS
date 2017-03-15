@@ -7,8 +7,9 @@ class NewComponent extends React.Component {
     return (
       <div {...this.props}>
         {console.log("2 works")}
+        <div className="move" id="move2">
          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non bibendum magna. Nam tempus est viverra magna malesuada, non scelerisque ligula maximus. Sed interdum at enim at vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet dui ut orci laoreet, quis pellentesque ipsum congue. Mauris auctor velit sit amet porta congue. Suspendisse vitae rhoncus metus, quis faucibus leo.
-
+         </div>
       </div>
     );
   }
