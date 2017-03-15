@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
 import Files from './components/Files';
-// import RenderTest from './components/RenderTest'
+import FirstLink from './components/FirstLink'
+import SecondLink from './components/SecondLink'
 import './index.css';
 
 

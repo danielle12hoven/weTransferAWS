@@ -10,3 +10,16 @@ body {
   list-style-type: none;
 }
 
+.new-component {
+  z-index: 100;
+}
+#new-component-1 {
+  margin-top: 200px;
+}
+
+#button-1 {
+  position: relative;
+}
+#button-2 {
+  position: relative;
+}
