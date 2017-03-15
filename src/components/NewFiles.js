@@ -21,17 +21,6 @@ class Input extends React.Component {
   }
 }
 
-
-// class Button extends React.Component {
-//   render() {
-//     return (
-//       <button {...this.props}>
-//         Submit
-//       </button>
-//     );
-//   }
-// }
-
 class Files extends React.Component {
   constructor() {
     super();
@@ -66,7 +55,3 @@ ReactDOM.render(
   <input />,
   document.getElementById("form-submit")
 )
-// ReactDOM.render(
-//   <button />,
-//   document.getElementById("button-submit")
-// );
